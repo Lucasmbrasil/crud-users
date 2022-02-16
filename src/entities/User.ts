@@ -11,7 +11,7 @@ export default class User {
   @Column()
   telefone!: string;
 
-  @Column()
+  @Column({ unique: true })
   cpf!: string;
 
   @Column()

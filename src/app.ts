@@ -1,6 +1,7 @@
 import "reflect-metadata";
 import express from "express";
 import router from "./routes";
+import { globalError } from "./middlewares/error.middleware";
 // import router from "./routes";
 // import { globalError } from "./middlewares/error.middleware";
 
@@ -11,7 +12,8 @@ app.use(express.json());
 app.use(router);
 
 app.use(express.json());
+
 // app.use(router);
-// app.use(globalError);
+app.use(globalError);
 
 export default app;

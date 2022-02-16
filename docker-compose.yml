@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    command: npm run dev
+    ports:
+      - 3000:3000
+    environment:
+      - PG_PASSWORD=password
+      - PG_DB=vainaweb
+      - PG_USER=postgres
+      - PG_HOST=db
+      - SECRET=secretKey
+    volumes:
+      - .:/code
+
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=vainaweb
+    ports:
+      - 5432:5432
