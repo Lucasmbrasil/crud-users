@@ -10,7 +10,7 @@ Para rodar a api basta utilizar o comando `docker-compose up`
 
 <h3 align='center'> Cadastro de usuário</h3>
 
-`POST /register - para cadastro de usuários FORMATO DA REQUISIÇÃO `
+`POST /register - FORMATO DA REQUISIÇÃO `
 
 ```json
 {
@@ -39,7 +39,8 @@ Caso dê tudo certo, a resposta será assim:
 ```
 
 <h3 align='center'> Login de usuário</h3>
-`POST /login - para login de usuários FORMATO DA REQUISIÇÃO `
+
+`POST /login - FORMATO DA REQUISIÇÃO `
 
 ```json
 {
@@ -58,7 +59,8 @@ Caso dê tudo certo, a resposta será assim:
 ```
 
 <h3 align='center'> Buscar usuários</h3>
-`GET /users -  FORMATO DA REQUISIÇÃO `
+
+`GET /users - FORMATO DA REQUISIÇÃO `
 
 Caso dê tudo certo, a resposta será assim:
 
@@ -80,7 +82,8 @@ Caso dê tudo certo, a resposta será assim:
 ```
 
 <h3 align='center'> Editar usuário</h3>
-`PATCH /users (Authorization: token) -  FORMATO DA REQUISIÇÃO `
+
+`PATCH /users (Authorization: token) - FORMATO DA REQUISIÇÃO`
 
 ```json
 {
@@ -106,7 +109,8 @@ Caso dê tudo certo a resposta será assim:
 ```
 
 <h3 align='center'> Deletar usuário</h3>
-`DELETE /users (Authorization: token) -  FORMATO DA REQUISIÇÃO- 201`
+
+`DELETE /users (Authorization: token) - FORMATO DA REQUISIÇÃO`
 
 Caso dê tudo certo a resposta será assim:
 
