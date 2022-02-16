@@ -21,7 +21,7 @@ export const create = async (
 ) => {
   try {
     const user = await createUser(req.body);
-    res.send(user);
+    res.status(201).send(user);
   } catch (error: any) {
     next(error);
   }
